@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>SC Piracicaba - Envio Exames</title>  
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Materialize(utilizando apenas no Login para teste)-->
+        <!--CDN
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  rel="stylesheet" >
+        -->
+        <link href="materialize/css/materialize.min.css" rel="stylesheet">
+
+        <!--Google-->
+        <!--CDN
+            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+        -->    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+
+        <title>Login SC</title>   
+    </head>
+    <body>     
+    
+        <div class="row">                        
+            <form id="frmLogin" action="/login" method="GET" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="number" name="username" id="username" class="validate" required
+                        value="8019">
+                        <label for="icon_prefix">Usuário:</label>
+                    </div>
+                </div>    
+                
+                <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">dialpad</i>
+                    <input id="icon_telephone" type="password" name="password" id="password" class="validate" required value="2203RONNI0611">
+                    <label for="icon_telephone">Senha:</label>
+                </div>
+                </div>
+                
+                <button type="submit" onclick="setUsuarioLogado()" name="action" class="btn waves-effect waves-light">Entrar
+                    <i class="material-icons right">send</i></button>        
+            </form>
+        </div>     
+                
+        <!-- Rodapé exibido em todas as páginas -->
+        <footer>
+            <p class="text-center">© 2023. Todos os direitos reservados</p>
+            <h6 class="text-center">
+            <a href="https://www.santacasadepiracicaba.com.br/noticia.php?id=805"  target="_blank">Tecnologia da Informação - Santa Casa de Piracicaba.</a>
+            </h6>
+        </footer>                
+
+        <!-- Materialize(utilizando apenas no Login para teste)-->
+        <!--CDN
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        -->
+        <script src="materialize/js/materialize.min.js"></script>
+        
+
+    </body>
+</html>

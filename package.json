@@ -1,0 +1,22 @@
+{
+  "name": "site-comofazerinformatica",
+  "version": "2.0.0",
+  "description": "Site blog TI",
+  "main": "/src/server.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ronni Correa Novello - ronnicorrea@hotmail.com",
+  "license": "ISC",
+  "dependencies": {    
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.3",
+    "fs-extra": "^11.2.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}

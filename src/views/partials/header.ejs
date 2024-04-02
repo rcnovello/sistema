@@ -1,0 +1,98 @@
+<!-- Cabeçalho exibido em todas as páginas -->
+<!--<div class="container-fluid" style="margin-bottom: 120px;">-->
+<div class="container-fluid">
+  <!--Menu header-->
+  <nav class="navbar navbar-dark fixed-top" style="background-color: #4d7498;">
+    <!--<nav class="navbar navbar-dark bg-dark fixed-top" style="background-color: #4d7498;">-->
+    
+
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+          aria-expanded="false" style="background-color: #f9f8f9">
+          <i class="fa-solid fa-user"></i> <i id="dropdownUsuarioLogado">Usuário</i>
+        </a>      
+        <ul class="dropdown-menu">          
+          <li class="nav-item">
+            <a class="nav-link" href="/logout"><i class="fa-solid fa-power-off"></i> Sair</a>            
+          </li>                                        
+        </ul>
+      </div>
+      
+      <div class="imgLogo">
+        <img src="img/imglogo.png" class="rounded float-end" alt="Logo">              
+      </div>      
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" 
+            style="background-color: #f9f8f9; color: black;">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style=" color: #4d7498;"> Menu de Acesso</h5>
+          <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="fa-solid fa-house"></i>   Página Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"><i class="fa-solid fa-file-import"></i> Tela 1</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="/"><i class="fa-solid fa-list"></i> Tela 2</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="/"><i class="fa-solid fa-list"></i> Tela 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"><i class="fa-solid fa-list"></i> Tela 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>    
+  </nav>
+
+  
+  <!--Mensagens do Sistema-->
+  <div class="toast fade show msgSistema fixed-top" data-bs-autohide="false" role="alert" aria-live="assertive" 
+  aria-atomic="true" id="toastAviso" hidden style="margin-top: 70px;">
+    <div class="toast-header">          
+      <svg class="bd-placeholder-img bg-dark rounded me-2" width="20" height="20" aria-hidden="true" focusable="false">
+        <rect width="100%" height="100%" fill="#007aff"></rect>
+      </svg>      
+      <strong class="me-auto">Mensagem do Sistema</strong>
+      <small></small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" id="btnCloseAviso"></button>
+    </div>
+    <div class="toast-body">
+      <div class="progress bg-dark" id="divDivProgressbarAttLaudo" role="progressbar" aria-label="Animated striped"
+      aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: auto;">      
+        <div class="progress-bar overflow-visible progress-bar-striped progress-bar-animated" id="divProgressbarAttLaudo">
+          <spam id="spamProgressBarAttLaudo" class="text-wrap overflow-x-visible">            
+          </spam>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Mensagens do Sistema PADRÃO -->
+    
+    <div class="toast fade show msgSistemaPadrao fixed-top" data-bs-autohide="false" role="alert" aria-live="assertive" 
+    aria-atomic="true" id="toastAvisoPadrao" hidden>
+      <div class="toast-header">          
+        <svg class="bd-placeholder-img bg-dark rounded me-2" width="20" height="20" aria-hidden="true" focusable="false">
+          <rect width="100%" height="100%" fill="#007aff"></rect>
+        </svg>      
+        <strong class="me-auto">Mensagem do Sistema</strong>
+        <small></small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" id="btnCloseAvisoPadrao"></button>
+      </div>
+      <div class="toast-body">
+        <spam id="spamAvisoPadrao" class="text-wrap overflow-x-visible fw-bolder" >Teste</spam>        
+      </div>
+    </div>
+  
+</div>

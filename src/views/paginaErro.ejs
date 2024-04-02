@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <%- include('partials/head.ejs') %> 
+</head>
+<body>
+
+    <div class="container-fluid containerHeader">
+        <%- include('partials/header.ejs') %>
+        <h3></h3>
+    </div>  
+    
+    <div style="text-align: center; margin-top: 100px;" class="alert alert-danger" role="alert">
+        <h1>Ocorreu um erro</h1>
+        <% if (typeof errorMessage !== 'undefined') { %>
+            <p><%= decodeURIComponent(errorMessage) %></p>
+        <% } %>
+        <p><a href="/">Voltar e tentar novamente.</a></p>
+    </div>
+
+      <%- include('partials/footer.ejs') %>
+      <%- include('partials/lib-js.ejs') %>
+</body>
+</html>
